@@ -42,7 +42,12 @@ Download Resume
 
 # About Me
 
-(To be written)
+I am a Data Scientist passionate about transforming raw data into actionable insights that support strategic business decisions. My work combines statistics, machine learning, and data visualization to solve real-world problems across finance, retail, healthcare, and real estate.
+
+I specialize in developing end-to-end analytical solutions—from data collection and preprocessing to predictive modeling, interactive dashboards, and deployment. I enjoy turning complex datasets into intuitive visual stories that help organizations make confident, data-driven decisions.
+
+My goal is to build scalable AI and analytics solutions that create measurable business value while continuously expanding my expertise in machine learning, business intelligence, and modern data engineering.
+
 
 ---
 
