@@ -126,3 +126,57 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/*============================
+Animated Statistics
+=============================*/
+
+const counters = document.querySelectorAll(".hero-stats h3");
+
+const animateCounter = (counter) => {
+
+    const target = parseInt(counter.innerText);
+
+    let count = 0;
+
+    const speed = target / 60;
+
+    const update = () => {
+
+        if(count < target){
+
+            count += speed;
+
+            counter.innerText = Math.ceil(count) + "+";
+
+            requestAnimationFrame(update);
+
+        }else{
+
+            counter.innerText = target + "+";
+
+        }
+
+    };
+
+    update();
+
+};
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            counters.forEach(animateCounter);
+
+            observer.disconnect();
+
+        }
+
+    });
+
+});
+
+observer.observe(document.querySelector(".hero-stats"));
