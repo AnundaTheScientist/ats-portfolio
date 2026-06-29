@@ -40,7 +40,23 @@
     <link rel="stylesheet"
         href="css/style.css">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
 </head>
+
+<div id="loader">
+
+    <div class="loader-logo">
+
+        <img src="assets/images/logo.png" alt="ATS Logo">
+
+    </div>
+
+</div>
 
 <body>
 
@@ -129,11 +145,7 @@
 
                 <h2>
 
-                    <span id="typing">
-
-                        Data Scientist
-
-                    </span>
+                    <span id="typing"></span>
 
                 </h2>
 
@@ -145,7 +157,7 @@
                     and Interactive Dashboards.
 
                 </p>
-
+            </div>
                 <div class="hero-buttons">
 
                     <a href="#projects"
@@ -833,6 +845,12 @@
     <!-- FOOTER -->
     <!-- ================================================= -->
 
+    <button id="backTop">
+
+        <i class="fas fa-arrow-up"></i>
+
+</button>
+    
     <footer class="footer">
 
     <div class="container">
@@ -879,7 +897,19 @@
 
     <!-- JS -->
 
-    <script src="js/main.js"></script>
+    <!-- Third-party libraries -->
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16"></script>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+        <!-- Your JavaScript -->
+
+        <script src="js/typing.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script src="js/dashboard.js"></script>
 
 </body>
 
